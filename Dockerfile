@@ -1,5 +1,4 @@
 FROM maven:3.3-jdk-8-onbuild
 FROM java:8
-RUN chmod +x target/json-validator-0.1.jar
-CMD ["java","-jar","target/json-validator-0.1.jar"]
+CMD ["java","-jar","/usr/src/app/target/json-validator-0.1.jar"]
 EXPOSE 80
